@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: pdf-qa-app
+    env: python
+    buildCommand: ""
+    startCommand: python app.py
+    envVars:
+      - key: OPENAI_API_KEY
+        value: your-openai-api-key
